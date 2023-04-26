@@ -19,7 +19,7 @@ I created a chat box that has the same **comedic night** the feeling as those So
 
 ## Most creative use of Github
 
-Shared our code through a githib repo nad used these features :-
+Shared code through githib repo and used these features :-
 
 1. Regular and small commits
 2. Raised Issues - Issues were raised for the bugs of enhancements that were found in the project throughout the hackathon
