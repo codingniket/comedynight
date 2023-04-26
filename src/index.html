@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comedy Chat Bot</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./assets/icon.gif">
+</head>
+<body>
+    <div class="container">
+        <div class="picture"><img src="./assets/Drake.gif" /></div>
+        <h1>Comedy Nights</h1>
+        <h2>What's up, Tell me somthing!</h2>
+        <div class="search">
+          <input id="query" type="text" placeholder="put down your question here"/>
+        </div>
+        <button id = "btn" onclick="search()">WOOOO</button>
+      </div>
+
+
+
+      <div class="loader">
+        <img id="img1" src="./assets/loading.gif" />
+      </div>
+
+
+      <script>
+        const xhr = new XMLHttpRequest();
+        let resp = document.getElementsByClassName("res");
+        let search1 = document.getElementById("query");
+        let query = document.getElementById("query").value;
+        let loading = document.getElementsByClassName("loader");
+
+
+        loading[0].hidden = true;
+        console.log(query);
+
+
+        xhr.onloadstart = () => {        
+        loading[0].hidden = false;
+        loading[0].scrollIntoView();
+      };
+
+
+        xhr.onload = function () {        
+       if (xhr.status === 200) {
+       console.log(xhr.responseText);
+       resp[0].innerHTML = xhr.responseText;
+       search1.scrollIntoView();
+       } else {
+       console.log("Request failed. Returned status: " + xhr.status);
+       }
+     };
+
+
+    xhr.onloadend = () => {
+    loading[0].hidden = true;
+    };
+
+    
+    function search() {
+    query = document.getElementById("query").value;
+    console.log("Working!");
+    xhr.open("POST", "/output");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    let data = JSON.stringify({ query: query });
+    xhr.send(data);
+    console.log(query);
+}
+
+      </script>
+</body>
+</html>

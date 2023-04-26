@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Sigmar&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    text-align: center;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffff;
+}
+
+.container
+{
+    display: block;
+}
+
+h1
+{
+    font-family: 'Sigmar', cursive;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+h2
+{
+    font-size: 24px;
+}
+
+input
+{
+    margin-top: 20px;
+    padding: 20px 60px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 5px solid #5500ff;
+    margin-bottom: 20px;
+    transition: ease-in-out, width .35s ease-in-out;
+    outline: none;
+}
+
+input:focus {
+background: #000000;
+color: aliceblue;
+transform: translateY(4px);
+}
+
+button
+{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+  outline: none;
+  margin-bottom: 50px;
+}
+
+button:hover
+{
+    background-color: #5500ff;
+    
+}
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
