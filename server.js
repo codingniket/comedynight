@@ -7,10 +7,8 @@ app.use(express.static(__dirname + "/src"));
 app.use(express.json());
 
 const configuration = new Configuration({
-  apiKey: "",
+  apiKey: process.env.API_KEY,
 });
-
-// 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
 
 const openai = new OpenAIApi(configuration);
 
@@ -36,7 +34,7 @@ app.post("/output", (req, res) => {
         },
       ],
       temperature: 0.2,
-      max_tokens: 300,
+      max_tokens: 100,
       top_p: 1,
       frequency_penalty: 0.5,
       presence_penalty: 0,

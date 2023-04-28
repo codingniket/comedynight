@@ -15,7 +15,6 @@ I created a chat box that has the same **comedic night** the feeling as those So
 - Node.js
 - Express.js
 - Open AI
-- Figma
 
 ## Most creative use of Github
 
@@ -32,8 +31,8 @@ Shared code through githib repo and used these features :-
 
 ## 🏅 Accomplishments that we're proud of
 
-1) Completed the project one time
-2) Using of gif to give more humorous look
+1. Completed the project one time
+2. Using of gif to give more humorous look
 
 ## 📖 What we learned
 

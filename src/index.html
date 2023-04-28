@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="picture"><img src="./assets/Drake.gif" /></div>
+        <div class="picture"><img src="./assets/Drake.gif" class="picture1"/></div>
         <h1>Comedy Nights</h1>
         <h2>What's up, Tell me somthing!</h2>
         <div class="search">
@@ -19,7 +19,9 @@
         <button id = "btn" onclick="search()">WOOOO</button>
       </div>
 
-
+      <div class="message">
+        Hello There!
+      </div>
 
       <div class="loader">
         <img id="img1" src="./assets/loading.gif" />
@@ -28,7 +30,7 @@
 
       <script>
         const xhr = new XMLHttpRequest();
-        let resp = document.getElementsByClassName("res");
+        let message = document.getElementsByClassName("message");
         let search1 = document.getElementById("query");
         let query = document.getElementById("query").value;
         let loading = document.getElementsByClassName("loader");
@@ -47,7 +49,7 @@
         xhr.onload = function () {        
        if (xhr.status === 200) {
        console.log(xhr.responseText);
-       resp[0].innerHTML = xhr.responseText;
+       message[0].innerHTML = xhr.responseText;
        search1.scrollIntoView();
        } else {
        console.log("Request failed. Returned status: " + xhr.status);

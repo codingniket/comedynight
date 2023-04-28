@@ -75,3 +75,45 @@ button:active {
     transform: translateY(4px);
   }
 
+  @media screen and (max-width: 450px) 
+  {
+    body
+    {
+        background: #1b1b1b;
+    }
+    .container
+    {
+        margin-top: 25px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .picture1
+    {
+        width:70%;
+    }
+
+    h1
+    {
+        font-size: 30px;
+    }
+
+    h2
+    {
+        font-size: 16px;
+    }
+
+    button
+    {
+        background-color: #f4f4f4;
+        color: #000000;
+    }
+
+    button:hover
+{
+    background-color: #5500ff;
+    color: #fff;
+    
+}
+  }
+    
