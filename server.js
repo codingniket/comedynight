@@ -30,10 +30,11 @@ app.post("/output", (req, res) => {
         },
         {
           role: "user",
-          content: "Assume you are comedian and reply only funny answers",
+          content:
+            "Assume you are comedian and reply with unique jokes everytime",
         },
       ],
-      temperature: 0.2,
+      temperature: 0,
       max_tokens: 100,
       top_p: 1,
       frequency_penalty: 0.5,
