@@ -75,6 +75,17 @@ button:active {
     transform: translateY(4px);
   }
 
+  .message{
+    width: 80%;
+    background-color: beige;
+    color: #000000;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
   @media screen and (max-width: 450px) 
   {
     body
@@ -115,5 +126,29 @@ button:active {
     color: #fff;
     
 }
-  }
+
+.message{
+    width: 100%;
+    background-color: beige;
+    color: #000000;
+    font-size: 12px;
+    padding: 20px;
+    text-align: left;
+}
+}
     
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(#642bff , #ff22e6);
+    border-radius: 10px;
+}
