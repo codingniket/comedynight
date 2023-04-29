@@ -31,7 +31,9 @@ app.post("/output", (req, res) => {
         {
           role: "user",
           content:
-            "Assume you are comedian and reply with unique jokes everytime",
+            "Assume you are comedian and posses the knowledge of funny quotes and meme and answer this question" +
+            e +
+            "with funny way ",
         },
       ],
       temperature: 0,
