@@ -1,4 +1,5 @@
-# Comedy Night Chat-Bot
+# Comedy Night Chat-Bot 
+# MLH ChatHacks 🏆 under most entertaining chatbot
 
 ## 💡 Inspiration
 
